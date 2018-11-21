@@ -1,6 +1,10 @@
+{-# LANGUAGE TemplateHaskell #-}
+{-# OPTIONS_GHC -fplugin=Scary #-}
+
 module Main where
 
-import Lib
+test :: Int
+test = pure 3
 
 main :: IO ()
-main = someFunc
+main = print "hello scary world"
